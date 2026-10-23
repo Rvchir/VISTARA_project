@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find my order · VISTARA</title>
+  <meta name="description" content="Look up an order, check delivery, or read the refund rules.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Spline+Sans:wght@400;500;600&family=Spline+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="shell masthead__bar">
+    <a class="wordmark" href="index.html">VISTARA<span>See the game from the right seat</span></a>
+    <form class="searchbar" action="fixtures.html" method="get" role="search">
+      <label class="visually-hidden" for="q">Search clubs, fixtures or grounds</label>
+      <input id="q" name="q" type="text" placeholder="Club, fixture or ground">
+      <button type="submit">Search</button>
+    </form>
+    <div class="masthead__aside">
+      <a class="btn btn--ghost btn--sm" href="track.html">Find my order</a>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Primary">
+    <div class="shell">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li>
+        <li>
+          <a href="fixtures.html#competitions">Competitions</a>
+          <ul class="submenu">
+            <li><a href="fixtures.html">Indian Super League</a></li>
+            <li><a href="fixtures.html">Durand Cup</a></li>
+            <li><a href="fixtures.html">AFC Champions League Two</a></li>
+            <li><a href="fixtures.html">Indian Women's League</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="event.html">Grounds</a>
+          <ul class="submenu">
+            <li><a href="event.html">Mumbai Football Arena</a></li>
+            <li><a href="event.html">Kaloor International Stadium</a></li>
+            <li><a href="event.html">Fatorda Stadium</a></li>
+            <li><a href="event.html">Sree Kanteerava Stadium</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="track.html">Help</a>
+          <ul class="submenu">
+            <li><a href="track.html">Track an order</a></li>
+            <li><a href="track.html#delivery">Ticket delivery</a></li>
+            <li><a href="track.html#refunds">Refunds</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="assurance">
+  <div class="shell">
+    <span><b>4.7 / 5</b> from 21,212 supporters</span>
+    <span>Selling seats since <b>2006</b></span>
+    <span><b>1.2 million</b> fans seated</span>
+    <span>Every order covered by the <b>Full House Guarantee</b></span>
+  </div>
+</div>
+
+<main id="main" class="shell section">
+
+  <div class="section__head">
+    <h1>Find my order</h1>
+    <p>Answers to the three things people ask most.</p>
+  </div>
+
+  <div class="checkout">
+    <div>
+      <div class="panel">
+        <h2>Look up an order</h2>
+        <form class="formgrid" action="confirmation.html" method="get">
+          <div class="field">
+            <label for="ord">Order number</label>
+            <input id="ord" name="ord" type="text" placeholder="VST-0000-000">
+          </div>
+          <div class="field">
+            <label for="oem">Email on the order</label>
+            <input id="oem" name="oem" type="email" placeholder="you@example.com">
+          </div>
+          <div class="field span-2">
+            <button class="btn btn--primary" type="submit">Show my order</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="panel" id="delivery">
+        <h2>Ticket delivery</h2>
+        <table class="table">
+          <tr><th>Mobile tickets</th><td>Emailed 48 hours before kick-off. Free.</td></tr>
+          <tr><th>Print at home</th><td>Emailed as a PDF 48 hours before kick-off. Free.</td></tr>
+          <tr><th>Collect at the ground</th><td>West Terrace box office, from three hours before kick-off. Bring photo ID. ₹200.</td></tr>
+        </table>
+      </div>
+
+      <div class="panel" id="refunds">
+        <h2>Refunds and resales</h2>
+        <p>If a fixture is cancelled outright, we refund the full amount including the booking fee, within five working days.</p>
+        <p>If a fixture moves date or kick-off time, your seats move with it. Tell us within seven days if the new date does not work and we will refund you.</p>
+        <p>Change of mind is not refundable, but you can list your seats for resale up to four hours before kick-off.</p>
+      </div>
+    </div>
+
+    <aside class="panel summary">
+      <h2>Still stuck?</h2>
+      <p class="hint">Our box office answers from 09:00 to 20:00, seven days a week.</p>
+      <table class="table">
+        <tr><th>Phone</th><td>0800 555 0142</td></tr>
+        <tr><th>Email</th><td>help@vistara.example</td></tr>
+        <tr><th>Matchdays</th><td>Gate 4 help point</td></tr>
+      </table>
+    </aside>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__cols">
+      <div>
+        <a class="wordmark" href="index.html">VISTARA<span>See the game from the right seat</span></a>
+      </div>
+      <div>
+        <h4>Buy</h4>
+        <ul>
+          <li><a href="fixtures.html">All fixtures</a></li>
+          <li><a href="event.html">Seating plans</a></li>
+          <li><a href="fixtures.html">Season tickets</a></li>
+          <li><a href="event.html">Hospitality boxes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="track.html">Track an order</a></li>
+          <li><a href="track.html#delivery">Ticket delivery</a></li>
+          <li><a href="track.html#refunds">Refunds and resales</a></li>
+          <li><a href="track.html">Accessible seating</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>VISTARA</h4>
+        <ul>
+          <li><a href="index.html">About us</a></li>
+          <li><a href="index.html">Sell with us</a></li>
+          <li><a href="index.html">Careers</a></li>
+          <li><a href="index.html">Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">
+      A student project. Clubs, grounds, fixtures and prices are invented for demonstration.
+      Built with HTML and CSS only — no JavaScript runs on this site.
+    </p>
+  </div>
+</footer>
+</body>
+</html>

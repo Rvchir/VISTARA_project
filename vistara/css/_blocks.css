@@ -1,0 +1,205 @@
+/* Generated: each block anchor on the bowl retargets the seat grid header. */
+#b101:target ~ .seatwrap .blk-name::after{content:"101"}
+#b101:target ~ .seatwrap .blk-band-val::after{content:"Gold"}
+#b101:target ~ .seatwrap{--seat-price:19100}
+#b102:target ~ .seatwrap .blk-name::after{content:"102"}
+#b102:target ~ .seatwrap .blk-band-val::after{content:"Gold"}
+#b102:target ~ .seatwrap{--seat-price:19100}
+#b103:target ~ .seatwrap .blk-name::after{content:"103"}
+#b103:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b103:target ~ .seatwrap{--seat-price:12000}
+#b104:target ~ .seatwrap .blk-name::after{content:"104"}
+#b104:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b104:target ~ .seatwrap{--seat-price:12000}
+#b105:target ~ .seatwrap .blk-name::after{content:"105"}
+#b105:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b105:target ~ .seatwrap{--seat-price:6200}
+#b106:target ~ .seatwrap .blk-name::after{content:"106"}
+#b106:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b106:target ~ .seatwrap{--seat-price:6200}
+#b107:target ~ .seatwrap .blk-name::after{content:"107"}
+#b107:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b107:target ~ .seatwrap{--seat-price:6200}
+#b108:target ~ .seatwrap .blk-name::after{content:"108"}
+#b108:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b108:target ~ .seatwrap{--seat-price:6200}
+#b109:target ~ .seatwrap .blk-name::after{content:"109"}
+#b109:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b109:target ~ .seatwrap{--seat-price:6200}
+#b110:target ~ .seatwrap .blk-name::after{content:"110"}
+#b110:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b110:target ~ .seatwrap{--seat-price:6200}
+#b111:target ~ .seatwrap .blk-name::after{content:"111"}
+#b111:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b111:target ~ .seatwrap{--seat-price:12000}
+#b112:target ~ .seatwrap .blk-name::after{content:"112"}
+#b112:target ~ .seatwrap .blk-band-val::after{content:"Gold"}
+#b112:target ~ .seatwrap{--seat-price:19100}
+#b113:target ~ .seatwrap .blk-name::after{content:"113"}
+#b113:target ~ .seatwrap .blk-band-val::after{content:"Gold"}
+#b113:target ~ .seatwrap{--seat-price:19100}
+#b114:target ~ .seatwrap .blk-name::after{content:"114"}
+#b114:target ~ .seatwrap .blk-band-val::after{content:"Gold"}
+#b114:target ~ .seatwrap{--seat-price:19100}
+#b115:target ~ .seatwrap .blk-name::after{content:"115"}
+#b115:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b115:target ~ .seatwrap{--seat-price:12000}
+#b116:target ~ .seatwrap .blk-name::after{content:"116"}
+#b116:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b116:target ~ .seatwrap{--seat-price:6200}
+#b117:target ~ .seatwrap .blk-name::after{content:"117"}
+#b117:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b117:target ~ .seatwrap{--seat-price:6200}
+#b118:target ~ .seatwrap .blk-name::after{content:"118"}
+#b118:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b118:target ~ .seatwrap{--seat-price:6200}
+#b119:target ~ .seatwrap .blk-name::after{content:"119"}
+#b119:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b119:target ~ .seatwrap{--seat-price:6200}
+#b120:target ~ .seatwrap .blk-name::after{content:"120"}
+#b120:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b120:target ~ .seatwrap{--seat-price:6200}
+#b121:target ~ .seatwrap .blk-name::after{content:"121"}
+#b121:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b121:target ~ .seatwrap{--seat-price:6200}
+#b122:target ~ .seatwrap .blk-name::after{content:"122"}
+#b122:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b122:target ~ .seatwrap{--seat-price:12000}
+#b123:target ~ .seatwrap .blk-name::after{content:"123"}
+#b123:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b123:target ~ .seatwrap{--seat-price:12000}
+#b124:target ~ .seatwrap .blk-name::after{content:"124"}
+#b124:target ~ .seatwrap .blk-band-val::after{content:"Gold"}
+#b124:target ~ .seatwrap{--seat-price:19100}
+#bM01:target ~ .seatwrap .blk-name::after{content:"M01"}
+#bM01:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM01:target ~ .seatwrap{--seat-price:30000}
+#bM02:target ~ .seatwrap .blk-name::after{content:"M02"}
+#bM02:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM02:target ~ .seatwrap{--seat-price:30000}
+#bM03:target ~ .seatwrap .blk-name::after{content:"M03"}
+#bM03:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM03:target ~ .seatwrap{--seat-price:30000}
+#bM04:target ~ .seatwrap .blk-name::after{content:"M04"}
+#bM04:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM04:target ~ .seatwrap{--seat-price:30000}
+#bM05:target ~ .seatwrap .blk-name::after{content:"M05"}
+#bM05:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM05:target ~ .seatwrap{--seat-price:30000}
+#bM06:target ~ .seatwrap .blk-name::after{content:"M06"}
+#bM06:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM06:target ~ .seatwrap{--seat-price:30000}
+#bM07:target ~ .seatwrap .blk-name::after{content:"M07"}
+#bM07:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM07:target ~ .seatwrap{--seat-price:30000}
+#bM08:target ~ .seatwrap .blk-name::after{content:"M08"}
+#bM08:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM08:target ~ .seatwrap{--seat-price:30000}
+#bM09:target ~ .seatwrap .blk-name::after{content:"M09"}
+#bM09:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM09:target ~ .seatwrap{--seat-price:30000}
+#bM10:target ~ .seatwrap .blk-name::after{content:"M10"}
+#bM10:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM10:target ~ .seatwrap{--seat-price:30000}
+#bM11:target ~ .seatwrap .blk-name::after{content:"M11"}
+#bM11:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM11:target ~ .seatwrap{--seat-price:30000}
+#bM12:target ~ .seatwrap .blk-name::after{content:"M12"}
+#bM12:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM12:target ~ .seatwrap{--seat-price:30000}
+#bM13:target ~ .seatwrap .blk-name::after{content:"M13"}
+#bM13:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM13:target ~ .seatwrap{--seat-price:30000}
+#bM14:target ~ .seatwrap .blk-name::after{content:"M14"}
+#bM14:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM14:target ~ .seatwrap{--seat-price:30000}
+#bM15:target ~ .seatwrap .blk-name::after{content:"M15"}
+#bM15:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM15:target ~ .seatwrap{--seat-price:30000}
+#bM16:target ~ .seatwrap .blk-name::after{content:"M16"}
+#bM16:target ~ .seatwrap .blk-band-val::after{content:"Box"}
+#bM16:target ~ .seatwrap{--seat-price:30000}
+#b201:target ~ .seatwrap .blk-name::after{content:"201"}
+#b201:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b201:target ~ .seatwrap{--seat-price:12000}
+#b202:target ~ .seatwrap .blk-name::after{content:"202"}
+#b202:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b202:target ~ .seatwrap{--seat-price:12000}
+#b203:target ~ .seatwrap .blk-name::after{content:"203"}
+#b203:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b203:target ~ .seatwrap{--seat-price:6200}
+#b204:target ~ .seatwrap .blk-name::after{content:"204"}
+#b204:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b204:target ~ .seatwrap{--seat-price:6200}
+#b205:target ~ .seatwrap .blk-name::after{content:"205"}
+#b205:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b205:target ~ .seatwrap{--seat-price:6200}
+#b206:target ~ .seatwrap .blk-name::after{content:"206"}
+#b206:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b206:target ~ .seatwrap{--seat-price:6200}
+#b207:target ~ .seatwrap .blk-name::after{content:"207"}
+#b207:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b207:target ~ .seatwrap{--seat-price:6200}
+#b208:target ~ .seatwrap .blk-name::after{content:"208"}
+#b208:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b208:target ~ .seatwrap{--seat-price:6200}
+#b209:target ~ .seatwrap .blk-name::after{content:"209"}
+#b209:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b209:target ~ .seatwrap{--seat-price:6200}
+#b210:target ~ .seatwrap .blk-name::after{content:"210"}
+#b210:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b210:target ~ .seatwrap{--seat-price:6200}
+#b211:target ~ .seatwrap .blk-name::after{content:"211"}
+#b211:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b211:target ~ .seatwrap{--seat-price:6200}
+#b212:target ~ .seatwrap .blk-name::after{content:"212"}
+#b212:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b212:target ~ .seatwrap{--seat-price:6200}
+#b213:target ~ .seatwrap .blk-name::after{content:"213"}
+#b213:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b213:target ~ .seatwrap{--seat-price:6200}
+#b214:target ~ .seatwrap .blk-name::after{content:"214"}
+#b214:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b214:target ~ .seatwrap{--seat-price:12000}
+#b215:target ~ .seatwrap .blk-name::after{content:"215"}
+#b215:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b215:target ~ .seatwrap{--seat-price:12000}
+#b216:target ~ .seatwrap .blk-name::after{content:"216"}
+#b216:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b216:target ~ .seatwrap{--seat-price:12000}
+#b217:target ~ .seatwrap .blk-name::after{content:"217"}
+#b217:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b217:target ~ .seatwrap{--seat-price:6200}
+#b218:target ~ .seatwrap .blk-name::after{content:"218"}
+#b218:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b218:target ~ .seatwrap{--seat-price:6200}
+#b219:target ~ .seatwrap .blk-name::after{content:"219"}
+#b219:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b219:target ~ .seatwrap{--seat-price:6200}
+#b220:target ~ .seatwrap .blk-name::after{content:"220"}
+#b220:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b220:target ~ .seatwrap{--seat-price:6200}
+#b221:target ~ .seatwrap .blk-name::after{content:"221"}
+#b221:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b221:target ~ .seatwrap{--seat-price:6200}
+#b222:target ~ .seatwrap .blk-name::after{content:"222"}
+#b222:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b222:target ~ .seatwrap{--seat-price:6200}
+#b223:target ~ .seatwrap .blk-name::after{content:"223"}
+#b223:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b223:target ~ .seatwrap{--seat-price:6200}
+#b224:target ~ .seatwrap .blk-name::after{content:"224"}
+#b224:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b224:target ~ .seatwrap{--seat-price:6200}
+#b225:target ~ .seatwrap .blk-name::after{content:"225"}
+#b225:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b225:target ~ .seatwrap{--seat-price:6200}
+#b226:target ~ .seatwrap .blk-name::after{content:"226"}
+#b226:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b226:target ~ .seatwrap{--seat-price:6200}
+#b227:target ~ .seatwrap .blk-name::after{content:"227"}
+#b227:target ~ .seatwrap .blk-band-val::after{content:"Bronze"}
+#b227:target ~ .seatwrap{--seat-price:6200}
+#b228:target ~ .seatwrap .blk-name::after{content:"228"}
+#b228:target ~ .seatwrap .blk-band-val::after{content:"Silver"}
+#b228:target ~ .seatwrap{--seat-price:12000}

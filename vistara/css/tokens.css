@@ -1,0 +1,61 @@
+/* ==========================================================================
+   VISTARA — design tokens
+   Palette: a floodlit pitch at night. Deep grass-black, chalk paper,
+   floodlight amber, terrace claret.
+   ========================================================================== */
+
+:root {
+  /* Colour */
+  --pitch:        #0D2A20;
+  --pitch-deep:   #06170F;
+  --pitch-soft:   #17402F;
+  --paper:        #EEF1EB;
+  --card:         #FFFFFF;
+  --ink:          #10211B;
+  --ink-soft:     #4B5B53;
+  --ink-faint:    #7A897F;
+  --line:         #D3DACF;
+  --line-strong:  #B6C1B2;
+  --flood:        #F5B93F;
+  --flood-deep:   #D89A1D;
+  --claret:       #7A1E3C;
+  --claret-soft:  #F3E4E9;
+  --grass:        #2E7D52;
+  --grass-soft:   #E1F0E6;
+  --alert:        #B3261E;
+
+  /* Price bands */
+  --band-box:     #7A1E3C;
+  --band-gold:    #F5B93F;
+  --band-silver:  #6E9CC4;
+  --band-bronze:  #8FAE7C;
+
+  /* Type */
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body:    "Spline Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:    "Spline Sans Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --step--1: 0.8125rem;
+  --step-0:  0.9375rem;
+  --step-1:  1.0625rem;
+  --step-2:  1.375rem;
+  --step-3:  1.875rem;
+  --step-4:  2.625rem;
+  --step-5:  clamp(2.75rem, 6vw, 4.5rem);
+
+  /* Space */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+  --s8: 4.5rem;
+
+  /* Shape */
+  --r-sm: 3px;
+  --r-md: 6px;
+  --r-lg: 10px;
+  --shell: 1240px;
+}

@@ -1,0 +1,185 @@
+/* ==========================================================================
+   VISTARA — seat picker
+   Selection is plain <input type="checkbox"> + :checked.
+   The running count and money totals are CSS counters — no script anywhere.
+   ========================================================================== */
+
+.seatwrap {
+  counter-reset: picked subtotal fees total;
+  --seat-price: 12000;
+}
+
+/* hidden anchors that let a block on the bowl retarget this page */
+.anchor { display: block; height: 0; overflow: hidden; }
+
+.blk-bar {
+  background: var(--pitch);
+  color: var(--paper);
+  padding-block: var(--s5);
+}
+.blk-bar__grid { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s5); }
+.blk-bar h1 { font-size: var(--step-3); }
+.blk-name::after { content: "108"; }
+.blk-band { font-size: var(--step--1); color: rgba(238, 241, 235, 0.7); }
+.blk-band-val::after { content: "Bronze"; color: var(--flood); font-weight: 600; }
+.blk-meta { font-size: var(--step--1); color: rgba(238, 241, 235, 0.7); margin: 0; }
+.blk-bar__back { margin-left: auto; }
+
+/* --- The stand ----------------------------------------------------------- */
+
+.stand {
+  background: var(--pitch-deep);
+  border-radius: var(--r-lg);
+  padding: var(--s6) var(--s5);
+  overflow-x: auto;
+}
+
+.pitchline {
+  text-align: center;
+  color: var(--pitch-deep);
+  background: linear-gradient(180deg, var(--flood), var(--flood-deep));
+  border-radius: 999px;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  padding: var(--s2);
+  max-width: 44rem;
+  margin: 0 auto var(--s6);
+}
+
+.zone { margin-bottom: var(--s5); width: max-content; max-width: 100%; margin-inline: auto; }
+.zone__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s4);
+  color: rgba(238, 241, 235, 0.72);
+  font-size: var(--step--1);
+  border-bottom: 1px solid rgba(238, 241, 235, 0.16);
+  padding-bottom: var(--s2);
+  margin-bottom: var(--s4);
+  min-width: 34rem;
+}
+.zone__label b { color: var(--paper); font-family: var(--display); font-size: var(--step-0); }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+  min-width: 34rem;
+}
+.row__id {
+  width: 1.6rem;
+  flex: none;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: rgba(238, 241, 235, 0.55);
+  text-align: center;
+}
+.aisle { width: 1.4rem; flex: none; }
+
+.seat { position: relative; display: inline-grid; flex: none; }
+.seat input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.seat label,
+.seat--taken .seat-no {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.35rem;
+  border-radius: 4px 4px 2px 2px;
+  font-family: var(--mono);
+  font-size: 0.625rem;
+  cursor: pointer;
+  user-select: none;
+  color: var(--pitch-deep);
+}
+
+.zone--front .seat label { background: #E9D7A8; }
+.zone--mid   .seat label { background: #BFD2C4; }
+.zone--rear  .seat label { background: #9FB3A8; }
+
+.seat label:hover { outline: 2px solid var(--flood); outline-offset: 1px; }
+.seat input:focus-visible + label { outline: 3px solid var(--flood); outline-offset: 2px; }
+
+.seat input:checked + label {
+  background: var(--flood);
+  color: var(--pitch-deep);
+  font-weight: 700;
+  box-shadow: 0 0 0 2px var(--paper), 0 0 14px rgba(245, 185, 63, 0.75);
+}
+
+.seat--taken .seat-no {
+  background: transparent;
+  border: 1px dashed rgba(238, 241, 235, 0.22);
+  color: rgba(238, 241, 235, 0.25);
+  cursor: not-allowed;
+}
+.seat--access label::after { content: "♿"; font-size: 0.6rem; }
+
+/* --- Running totals, computed with counters ------------------------------ */
+
+.zone--front .seat input:checked + label { counter-increment: picked 1 subtotal 19100 fees 150 total 19250; }
+.zone--mid   .seat input:checked + label { counter-increment: picked 1 subtotal 12000 fees 150 total 12150; }
+.zone--rear  .seat input:checked + label { counter-increment: picked 1 subtotal 6200 fees 150 total 6350; }
+
+.tally {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background: var(--card);
+  border: 1px solid var(--line-strong);
+  border-bottom: 0;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  padding: var(--s4) var(--s5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s5);
+  box-shadow: 0 -10px 30px rgba(13, 42, 32, 0.12);
+  margin-top: var(--s5);
+}
+.tally__stat { display: grid; gap: 2px; }
+.tally__stat span { font-size: var(--step--1); color: var(--ink-soft); }
+.tally__stat b { font-family: var(--display); font-size: var(--step-2); font-weight: 800; }
+
+.tally__count::after { content: counter(picked); }
+.tally__sub::after   { content: "₹" counter(subtotal); }
+.tally__fees::after  { content: "₹" counter(fees); }
+.tally__total::after { content: "₹" counter(total); }
+
+.tally__go { margin-left: auto; }
+
+/* Empty state: nothing picked yet */
+.tally__empty { font-size: var(--step--1); color: var(--ink-faint); display: none; }
+.seatwrap:not(:has(.seat input:checked)) .tally__empty { display: block; }
+.seatwrap:not(:has(.seat input:checked)) .tally__go {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* --- Legend -------------------------------------------------------------- */
+
+.seatlegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s5);
+  font-size: var(--step--1);
+  color: rgba(238, 241, 235, 0.78);
+  margin-top: var(--s5);
+  padding-top: var(--s4);
+  border-top: 1px solid rgba(238, 241, 235, 0.16);
+}
+.seatlegend span { display: inline-flex; align-items: center; gap: var(--s2); }
+.seatlegend i { width: 1.1rem; height: 1rem; border-radius: 4px 4px 2px 2px; display: inline-block; }
+.seatlegend .i-front { background: #E9D7A8; }
+.seatlegend .i-mid   { background: #BFD2C4; }
+.seatlegend .i-rear  { background: #9FB3A8; }
+.seatlegend .i-pick  { background: var(--flood); }
+.seatlegend .i-gone  { border: 1px dashed rgba(238, 241, 235, 0.35); }

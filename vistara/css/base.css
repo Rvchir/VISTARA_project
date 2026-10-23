@@ -1,0 +1,210 @@
+/* ==========================================================================
+   VISTARA — reset, typography, page shell
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: var(--step-0);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin: 0;
+}
+
+h1 { font-size: var(--step-4); }
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-2); }
+
+p { margin: 0 0 var(--s4); max-width: 68ch; }
+
+a { color: inherit; }
+
+button, input, select { font: inherit; color: inherit; }
+
+:focus-visible {
+  outline: 3px solid var(--flood);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: var(--s3) var(--s4);
+  z-index: 99;
+}
+.skip:focus { left: var(--s4); top: var(--s4); }
+
+.shell {
+  width: min(100% - 2.5rem, var(--shell));
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* --- Masthead ------------------------------------------------------------ */
+
+.masthead {
+  background: var(--pitch);
+  color: var(--paper);
+}
+
+.masthead__bar {
+  display: flex;
+  align-items: center;
+  gap: var(--s5);
+  padding-block: var(--s4);
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  line-height: 1;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.wordmark span {
+  font-family: var(--body);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  color: var(--flood);
+}
+
+/* Search field — no JS, it is a plain GET form that lands on fixtures.html */
+.searchbar {
+  flex: 1 1 22rem;
+  display: flex;
+  background: var(--card);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  min-width: 15rem;
+}
+.searchbar input {
+  flex: 1;
+  border: 0;
+  padding: var(--s3) var(--s4);
+  background: transparent;
+  color: var(--ink);
+}
+.searchbar input::placeholder { color: var(--ink-faint); }
+.searchbar button {
+  border: 0;
+  background: var(--flood);
+  color: var(--pitch-deep);
+  font-weight: 600;
+  padding-inline: var(--s5);
+  cursor: pointer;
+}
+.searchbar button:hover { background: var(--flood-deep); }
+
+.masthead__aside {
+  display: flex;
+  gap: var(--s3);
+  align-items: center;
+  margin-left: auto;
+}
+
+/* --- Primary navigation (hover + focus dropdowns, pure CSS) -------------- */
+
+.nav {
+  border-top: 1px solid rgba(244, 242, 236, 0.14);
+  background: var(--pitch-deep);
+}
+.nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+.nav > .shell > ul > li { position: relative; }
+.nav a {
+  display: block;
+  text-decoration: none;
+  padding: var(--s3) var(--s4);
+  font-weight: 500;
+  color: var(--paper);
+}
+.nav > .shell > ul > li > a[aria-current="page"] { box-shadow: inset 0 -3px 0 var(--flood); }
+.nav a:hover { background: var(--pitch-soft); }
+
+.nav .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 13rem;
+  background: var(--pitch-deep);
+  border: 1px solid var(--pitch-soft);
+  border-top: 0;
+  flex-direction: column;
+  display: none;
+  z-index: 40;
+}
+.nav li:hover > .submenu,
+.nav li:focus-within > .submenu { display: flex; }
+
+/* --- Trust strip --------------------------------------------------------- */
+
+.assurance {
+  background: var(--grass-soft);
+  border-bottom: 1px solid var(--line);
+  font-size: var(--step--1);
+}
+.assurance .shell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s5);
+  padding-block: var(--s3);
+  color: var(--ink-soft);
+}
+.assurance b { color: var(--ink); font-weight: 600; }
+
+/* --- Footer -------------------------------------------------------------- */
+
+.footer {
+  background: var(--pitch);
+  color: var(--paper);
+  margin-top: var(--s8);
+  padding-block: var(--s7) var(--s5);
+}
+.footer__cols {
+  display: grid;
+  gap: var(--s6);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+.footer h4 { font-size: var(--step-0); letter-spacing: 0.04em; margin-bottom: var(--s3); }
+.footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s2); }
+.footer a { color: rgba(238, 241, 235, 0.78); text-decoration: none; font-size: var(--step--1); }
+.footer a:hover { color: var(--flood); text-decoration: underline; }
+.footer__legal {
+  margin-top: var(--s6);
+  padding-top: var(--s4);
+  border-top: 1px solid rgba(238, 241, 235, 0.16);
+  font-size: var(--step--1);
+  color: rgba(238, 241, 235, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  html { scroll-behavior: auto; }
+}

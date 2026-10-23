@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fixtures · VISTARA</title>
+  <meta name="description" content="Every fixture on sale, filtered by competition and price.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Spline+Sans:wght@400;500;600&family=Spline+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="shell masthead__bar">
+    <a class="wordmark" href="index.html">VISTARA<span>See the game from the right seat</span></a>
+    <form class="searchbar" action="fixtures.html" method="get" role="search">
+      <label class="visually-hidden" for="q">Search clubs, fixtures or grounds</label>
+      <input id="q" name="q" type="text" placeholder="Club, fixture or ground">
+      <button type="submit">Search</button>
+    </form>
+    <div class="masthead__aside">
+      <a class="btn btn--ghost btn--sm" href="track.html">Find my order</a>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Primary">
+    <div class="shell">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fixtures.html" aria-current="page">Fixtures</a></li>
+        <li>
+          <a href="fixtures.html#competitions">Competitions</a>
+          <ul class="submenu">
+            <li><a href="fixtures.html">Indian Super League</a></li>
+            <li><a href="fixtures.html">Durand Cup</a></li>
+            <li><a href="fixtures.html">AFC Champions League Two</a></li>
+            <li><a href="fixtures.html">Indian Women's League</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="event.html">Grounds</a>
+          <ul class="submenu">
+            <li><a href="event.html">Mumbai Football Arena</a></li>
+            <li><a href="event.html">Kaloor International Stadium</a></li>
+            <li><a href="event.html">Fatorda Stadium</a></li>
+            <li><a href="event.html">Sree Kanteerava Stadium</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="track.html">Help</a>
+          <ul class="submenu">
+            <li><a href="track.html">Track an order</a></li>
+            <li><a href="track.html#delivery">Ticket delivery</a></li>
+            <li><a href="track.html#refunds">Refunds</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="assurance">
+  <div class="shell">
+    <span><b>4.7 / 5</b> from 21,212 supporters</span>
+    <span>Selling seats since <b>2006</b></span>
+    <span><b>1.2 million</b> fans seated</span>
+    <span>Every order covered by the <b>Full House Guarantee</b></span>
+  </div>
+</div>
+
+<main id="main" class="shell section">
+
+  <div class="section__head">
+    <h1>Fixtures on sale</h1>
+    <p>34 fixtures · updated this morning</p>
+  </div>
+
+  <form class="filters">
+    <fieldset class="field">
+      <legend>Competition</legend>
+      <div class="chips">
+        <input type="radio" id="c-all" name="comp" checked><label for="c-all">All</label>
+        <input type="radio" id="c-lg" name="comp"><label for="c-lg">League</label>
+        <input type="radio" id="c-cup" name="comp"><label for="c-cup">Cup</label>
+        <input type="radio" id="c-eu" name="comp"><label for="c-eu">Continental</label>
+      </div>
+    </fieldset>
+    <div class="field">
+      <label for="when">When</label>
+      <select id="when" name="when">
+        <option>Any date</option>
+        <option>This weekend</option>
+        <option>Next 7 days</option>
+        <option>Next 30 days</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="ground">Ground</label>
+      <select id="ground" name="ground">
+        <option>All grounds</option>
+        <option>Mumbai Football Arena</option>
+        <option>Sree Kanteerava Stadium</option>
+        <option>Fatorda Stadium</option>
+        <option>Kaloor International Stadium</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="sort">Sort by</label>
+      <select id="sort" name="sort">
+        <option>Date, soonest first</option>
+        <option>Price, lowest first</option>
+        <option>Popularity</option>
+      </select>
+    </div>
+  </form>
+
+  <div class="listing">
+    <div>
+      <div class="fixtures">
+        <article class="fixture">
+          <div class="fixture__date">
+            <span>SAT</span>
+            <b>04</b>
+            <span>Oct · 19:45</span>
+          </div>
+          <div>
+            <p class="fixture__comp">Durand Cup</p>
+            <h3>Mumbai City FC vs Bengaluru FC</h3>
+            <p class="fixture__venue">Mumbai Football Arena, Mumbai</p>
+          </div>
+          <div class="fixture__cta">
+            <span class="fixture__from">from</span>
+            <a class="btn btn--primary" href="event.html">₹6,200</a>
+          </div>
+        </article>
+        <article class="fixture">
+          <div class="fixture__date">
+            <span>SAT</span>
+            <b>04</b>
+            <span>Oct · 15:00</span>
+          </div>
+          <div>
+            <p class="fixture__comp">Indian Super League</p>
+            <h3>Kerala Blasters FC vs Chennaiyin FC</h3>
+            <p class="fixture__venue">Kaloor International Stadium, Kochi</p>
+          </div>
+          <div class="fixture__cta">
+            <span class="fixture__from">from</span>
+            <a class="btn btn--primary" href="event.html">₹4,900</a>
+          </div>
+        </article>
+        <article class="fixture">
+          <div class="fixture__date">
+            <span>SUN</span>
+            <b>05</b>
+            <span>Oct · 16:30</span>
+          </div>
+          <div>
+            <p class="fixture__comp">Indian Super League</p>
+            <h3>FC Goa vs Mumbai City FC</h3>
+            <p class="fixture__venue">Fatorda Stadium, Margao</p>
+          </div>
+          <div class="fixture__cta">
+            <span class="fixture__from">from</span>
+            <a class="btn btn--primary" href="event.html">₹7,600</a>
+          </div>
+        </article>
+        <article class="fixture">
+          <div class="fixture__date">
+            <span>TUE</span>
+            <b>07</b>
+            <span>Oct · 20:00</span>
+          </div>
+          <div>
+            <p class="fixture__comp">AFC Champions League Two</p>
+            <h3>Bengaluru FC vs Lion City Sailors FC</h3>
+            <p class="fixture__venue">Sree Kanteerava Stadium, Bengaluru</p>
+          </div>
+          <div class="fixture__cta">
+            <span class="fixture__from">from</span>
+            <a class="btn btn--primary" href="event.html">₹10,800</a>
+          </div>
+        </article>
+        <article class="fixture">
+          <div class="fixture__date">
+            <span>WED</span>
+            <b>08</b>
+            <span>Oct · 19:45</span>
+          </div>
+          <div>
+            <p class="fixture__comp">Durand Cup</p>
+            <h3>Chennaiyin FC vs Hyderabad FC</h3>
+            <p class="fixture__venue">Jawaharlal Nehru Stadium, Chennai</p>
+          </div>
+          <div class="fixture__cta">
+            <span class="fixture__from">from</span>
+            <a class="btn btn--primary" href="event.html">₹3,700</a>
+          </div>
+        </article>
+        <article class="fixture">
+          <div class="fixture__date">
+            <span>SAT</span>
+            <b>11</b>
+            <span>Oct · 12:30</span>
+          </div>
+          <div>
+            <p class="fixture__comp">Indian Super League</p>
+            <h3>Hyderabad FC vs FC Goa</h3>
+            <p class="fixture__venue">GMC Balayogi Athletic Stadium, Hyderabad</p>
+          </div>
+          <div class="fixture__cta">
+            <span class="fixture__from">from</span>
+            <a class="btn btn--primary" href="event.html">₹5,600</a>
+          </div>
+        </article>
+        <article class="fixture">
+          <div class="fixture__date">
+            <span>SAT</span>
+            <b>11</b>
+            <span>Oct · 17:30</span>
+          </div>
+          <div>
+            <p class="fixture__comp">Indian Women's League</p>
+            <h3>Mumbai City FC Women vs Kerala Blasters FC Women</h3>
+            <p class="fixture__venue">Mumbai Football Arena, Mumbai</p>
+          </div>
+          <div class="fixture__cta">
+            <span class="fixture__from">from</span>
+            <a class="btn btn--primary" href="event.html">₹2,000</a>
+          </div>
+        </article>
+        <article class="fixture">
+          <div class="fixture__date">
+            <span>SUN</span>
+            <b>12</b>
+            <span>Oct · 14:00</span>
+          </div>
+          <div>
+            <p class="fixture__comp">Indian Super League</p>
+            <h3>Bengaluru FC vs Kerala Blasters FC</h3>
+            <p class="fixture__venue">Sree Kanteerava Stadium, Bengaluru</p>
+          </div>
+          <div class="fixture__cta">
+            <span class="fixture__from">from</span>
+            <a class="btn btn--primary" href="event.html">₹7,000</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <aside>
+      <div class="section__head"><h2>Cheapest right now</h2></div>
+      <ul class="index-list">
+        <li><a href="event.html">Mumbai City FC Women vs Kerala Blasters <span>₹2,000</span></a></li>
+        <li><a href="event.html">Chennaiyin vs Hyderabad <span>₹3,700</span></a></li>
+        <li><a href="event.html">Kerala Blasters vs Chennaiyin <span>₹4,900</span></a></li>
+        <li><a href="event.html">Hyderabad vs Goa <span>₹5,600</span></a></li>
+      </ul>
+      <div class="promise" style="grid-template-columns:1fr">
+        <div>
+          <h3>Can't find a fixture?</h3>
+          <p class="hint">Tickets go on general sale six weeks before kick-off. Leave your email and we will tell you the morning they land.</p>
+          <div class="field">
+            <label for="alert-email">Email</label>
+            <input id="alert-email" type="email" placeholder="you@example.com">
+          </div>
+          <p></p>
+          <a class="btn btn--dark btn--wide" href="fixtures.html">Set a reminder</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__cols">
+      <div>
+        <a class="wordmark" href="index.html">VISTARA<span>See the game from the right seat</span></a>
+      </div>
+      <div>
+        <h4>Buy</h4>
+        <ul>
+          <li><a href="fixtures.html">All fixtures</a></li>
+          <li><a href="event.html">Seating plans</a></li>
+          <li><a href="fixtures.html">Season tickets</a></li>
+          <li><a href="event.html">Hospitality boxes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="track.html">Track an order</a></li>
+          <li><a href="track.html#delivery">Ticket delivery</a></li>
+          <li><a href="track.html#refunds">Refunds and resales</a></li>
+          <li><a href="track.html">Accessible seating</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>VISTARA</h4>
+        <ul>
+          <li><a href="index.html">About us</a></li>
+          <li><a href="index.html">Sell with us</a></li>
+          <li><a href="index.html">Careers</a></li>
+          <li><a href="index.html">Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">
+      A student project. Clubs, grounds, fixtures and prices are invented for demonstration.
+      Built with HTML and CSS only — no JavaScript runs on this site.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
