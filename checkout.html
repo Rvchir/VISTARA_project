@@ -1,1 +1,213 @@
-vistara/checkout.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout · VISTARA</title>
+  <meta name="description" content="Confirm your seats and pay.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Spline+Sans:wght@400;500;600&family=Spline+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="shell masthead__bar">
+    <a class="wordmark" href="index.html">VISTARA<span>See the game from the right seat</span></a>
+    <form class="searchbar" action="fixtures.html" method="get" role="search">
+      <label class="visually-hidden" for="q">Search clubs, fixtures or grounds</label>
+      <input id="q" name="q" type="text" placeholder="Club, fixture or ground">
+      <button type="submit">Search</button>
+    </form>
+    <div class="masthead__aside">
+      <a class="btn btn--ghost btn--sm" href="track.html">Find my order</a>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Primary">
+    <div class="shell">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li>
+        <li>
+          <a href="fixtures.html#competitions">Competitions</a>
+          <ul class="submenu">
+            <li><a href="fixtures.html">Indian Super League</a></li>
+            <li><a href="fixtures.html">Durand Cup</a></li>
+            <li><a href="fixtures.html">AFC Champions League Two</a></li>
+            <li><a href="fixtures.html">Indian Women's League</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="event.html">Grounds</a>
+          <ul class="submenu">
+            <li><a href="event.html">Mumbai Football Arena</a></li>
+            <li><a href="event.html">Kaloor International Stadium</a></li>
+            <li><a href="event.html">Fatorda Stadium</a></li>
+            <li><a href="event.html">Sree Kanteerava Stadium</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="track.html">Help</a>
+          <ul class="submenu">
+            <li><a href="track.html">Track an order</a></li>
+            <li><a href="track.html#delivery">Ticket delivery</a></li>
+            <li><a href="track.html#refunds">Refunds</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="assurance">
+  <div class="shell">
+    <span><b>4.7 / 5</b> from 21,212 supporters</span>
+    <span>Selling seats since <b>2006</b></span>
+    <span><b>1.2 million</b> fans seated</span>
+    <span>Every order covered by the <b>Full House Guarantee</b></span>
+  </div>
+</div>
+
+<main id="main" class="shell section">
+
+  <ol class="steps">
+    <li class="is-done"><b>1</b> Choose a block</li>
+    <li class="is-done"><b>2</b> Pick your seats</li>
+    <li class="is-current"><b>3</b> Pay</li>
+    <li><b>4</b> Get your tickets</li>
+  </ol>
+
+  <div class="section__head">
+    <h1>Checkout</h1>
+    <p>Seats are held for 10 minutes.</p>
+  </div>
+
+  <form class="checkout" action="confirmation.html" method="get">
+    <div>
+      <div class="panel">
+        <h2>Who are the tickets for?</h2>
+        <div class="formgrid">
+          <div class="field">
+            <label for="fn">First name</label>
+            <input id="fn" name="fn" type="text" required>
+          </div>
+          <div class="field">
+            <label for="ln">Last name</label>
+            <input id="ln" name="ln" type="text" required>
+          </div>
+          <div class="field span-2">
+            <label for="em">Email</label>
+            <input id="em" name="em" type="email" required>
+            <p class="hint">Your tickets arrive here 48 hours before kick-off.</p>
+          </div>
+          <div class="field">
+            <label for="ph">Mobile</label>
+            <input id="ph" name="ph" type="tel">
+          </div>
+          <div class="field">
+            <label for="cn">Country</label>
+            <select id="cn" name="cn">
+              <option selected>India</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Germany</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>How should we send them?</h2>
+        <div class="chips">
+          <input type="radio" id="d-mob" name="delivery" checked><label for="d-mob">Mobile tickets</label>
+          <input type="radio" id="d-print" name="delivery"><label for="d-print">Print at home</label>
+          <input type="radio" id="d-box" name="delivery"><label for="d-box">Collect at the ground</label>
+        </div>
+        <p class="hint" style="margin-top:0.75rem">Mobile tickets are free. Collection opens three hours before kick-off at the West Terrace box office.</p>
+      </div>
+
+      <div class="panel">
+        <h2>Payment</h2>
+        <p class="hint">This is a demonstration build. The form does not send anything anywhere and no payment is taken.</p>
+        <div class="formgrid">
+          <div class="field span-2">
+            <label for="card">Card number</label>
+            <input id="card" name="card" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="exp">Expires</label>
+            <input id="exp" name="exp" type="text" placeholder="MM / YY" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="cvc">Security code</label>
+            <input id="cvc" name="cvc" type="text" autocomplete="off">
+          </div>
+        </div>
+        <p></p>
+        <label class="switch"><input type="checkbox" required><i></i> I accept the ticket terms and the ground regulations</label>
+      </div>
+    </div>
+
+    <aside class="panel summary">
+      <h2>Your order</h2>
+      <p class="hint">Mumbai City FC vs Bengaluru FC<br>Durand Cup · Sat 4 Oct 2026, 19:45<br>Mumbai Football Arena, Mumbai</p>
+      <dl>
+        <div><dt>Block 108, row J, seat 12</dt><dd>₹12,000</dd></div>
+        <div><dt>Block 108, row J, seat 13</dt><dd>₹12,000</dd></div>
+        <div><dt>Booking fee, 2 seats</dt><dd>₹300</dd></div>
+        <div class="total"><dt>Total</dt><dd>₹24,300</dd></div>
+      </dl>
+      <p></p>
+      <button class="btn btn--primary btn--wide" type="submit">Pay ₹24,300</button>
+      <p class="hint" style="margin-top:0.75rem">Covered by the Full House Guarantee.</p>
+    </aside>
+  </form>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__cols">
+      <div>
+        <a class="wordmark" href="index.html">VISTARA<span>See the game from the right seat</span></a>
+      </div>
+      <div>
+        <h4>Buy</h4>
+        <ul>
+          <li><a href="fixtures.html">All fixtures</a></li>
+          <li><a href="event.html">Seating plans</a></li>
+          <li><a href="fixtures.html">Season tickets</a></li>
+          <li><a href="event.html">Hospitality boxes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="track.html">Track an order</a></li>
+          <li><a href="track.html#delivery">Ticket delivery</a></li>
+          <li><a href="track.html#refunds">Refunds and resales</a></li>
+          <li><a href="track.html">Accessible seating</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>VISTARA</h4>
+        <ul>
+          <li><a href="index.html">About us</a></li>
+          <li><a href="index.html">Sell with us</a></li>
+          <li><a href="index.html">Careers</a></li>
+          <li><a href="index.html">Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">
+      A student project. Clubs, grounds, fixtures and prices are invented for demonstration.
+      Built with HTML and CSS only — no JavaScript runs on this site.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
