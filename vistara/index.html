@@ -11,6 +11,26 @@
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
+  <style>
+    /* Make hero stadium eventless on index page */
+    .hero__bowl {
+      pointer-events: none !important;
+      user-select: none !important;
+    }
+    .hero__bowl .bowl,
+    .hero__bowl .bowl * {
+      pointer-events: none !important;
+      cursor: default !important;
+    }
+    .hero__bowl .blk:hover path {
+      filter: none !important;
+      stroke: var(--pitch-deep) !important;
+    }
+    .hero__bowl a.blk {
+      pointer-events: none !important;
+      cursor: default !important;
+    }
+  </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -42,12 +62,9 @@
           </ul>
         </li>
         <li>
-          <a href="event.html">Grounds</a>
+          <a href="event.html">Stadium</a>
           <ul class="submenu">
-            <li><a href="event.html">Mumbai Football Arena</a></li>
-            <li><a href="event.html">Kaloor International Stadium</a></li>
-            <li><a href="event.html">Fatorda Stadium</a></li>
-            <li><a href="event.html">Sree Kanteerava Stadium</a></li>
+            <li><a href="event.html">JLN Stadium, New Delhi</a></li>
           </ul>
         </li>
         <li>
@@ -89,6 +106,7 @@
           <a href="fixtures.html">Under ₹7,500</a>
           <a href="event.html">Hospitality</a>
           <a href="seats.html">Accessible seats</a>
+          <a href="view3d.html" style="color: var(--accent); font-weight: 700;">✨ Explore 3D Stadium</a>
         </div>
       </div>
       <figure class="hero__bowl">
@@ -175,14 +193,17 @@
 <a class="blk blk--bronze" href="seats.html#b227" aria-label="Block 227, from ₹6,200"><path d="M 367.8 72.2 L 375.0 69.9 L 382.2 67.6 L 389.5 65.5 L 396.8 63.4 L 404.2 61.4 L 411.6 59.4 L 419.0 57.5 L 426.5 55.8 L 434.0 54.0 L 441.5 52.4 L 449.1 50.8 L 456.7 49.4 L 464.3 48.0 L 472.0 46.6 L 496.3 120.5 L 490.1 121.6 L 483.9 122.7 L 477.7 123.9 L 471.6 125.2 L 465.5 126.5 L 459.4 127.8 L 453.4 129.3 L 447.3 130.8 L 441.3 132.3 L 435.4 134.0 L 429.5 135.6 L 423.6 137.4 L 417.7 139.2 L 411.9 141.0 Z"/><text x="436.2" y="93.4" font-size="16" transform="rotate(-19.3 436.2 93.4)">227</text></a>
 <a class="blk blk--silver" href="seats.html#b228" aria-label="Block 228, from ₹12,000"><path d="M 484.1 44.7 L 491.9 43.6 L 499.6 42.5 L 507.4 41.5 L 515.2 40.6 L 523.0 39.8 L 530.8 39.1 L 538.6 38.4 L 546.5 37.8 L 554.4 37.3 L 562.2 36.9 L 570.1 36.6 L 578.0 36.3 L 585.9 36.1 L 593.8 36.0 L 595.0 112.0 L 588.6 112.1 L 582.2 112.2 L 575.8 112.5 L 569.4 112.7 L 563.0 113.1 L 556.6 113.5 L 550.3 113.9 L 543.9 114.5 L 537.6 115.1 L 531.3 115.7 L 525.0 116.4 L 518.7 117.2 L 512.4 118.1 L 506.1 119.0 Z"/><text x="544.5" y="76.2" font-size="16" transform="rotate(-6.4 544.5 76.2)">228</text></a>
 </g>
+</g>
 <g class="bowl-stand">
 <text x="600" y="34" text-anchor="middle">North Bank</text>
 <text x="600" y="818" text-anchor="middle">Kop End</text>
 <text x="30" y="420" text-anchor="middle" transform="rotate(-90 30 420)">West Terrace</text>
 <text x="1170" y="420" text-anchor="middle" transform="rotate(90 1170 420)">East Terrace</text>
 </g>
-</svg>
-        <figcaption>Mumbai Football Arena, Mumbai — 62,400 seats. Choose a block to start.</figcaption>
+        <figcaption style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 0;">
+          <span style="color: var(--ink-faint); font-size: 14px;">JLN Stadium, New Delhi — 60,000 capacity seating plan</span>
+          <a class="btn btn--primary btn--sm" href="view3d.html" id="explore-3d-btn" style="text-decoration: none; padding: 6px 14px; font-size: 13px; font-weight: 700;">Explore in 3D &rarr;</a>
+        </figcaption>
       </figure>
     </div>
   </section>
@@ -339,13 +360,6 @@
           <li><a href="fixtures.html">FC Goa <span>5 fixtures</span></a></li>
           <li><a href="fixtures.html">Chennaiyin FC <span>4 fixtures</span></a></li>
           <li><a href="fixtures.html">Hyderabad FC <span>4 fixtures</span></a></li>
-        </ul>
-        <div class="section__head"><h2>By ground</h2></div>
-        <ul class="index-list">
-          <li><a href="event.html">Mumbai Football Arena <span>62,400</span></a></li>
-          <li><a href="event.html">Sree Kanteerava Stadium <span>48,100</span></a></li>
-          <li><a href="event.html">Fatorda Stadium <span>41,800</span></a></li>
-          <li><a href="event.html">Kaloor International Stadium <span>29,500</span></a></li>
         </ul>
       </aside>
     </div>
