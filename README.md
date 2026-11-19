@@ -13,7 +13,13 @@ A complete, modern frontend football stadium ticket booking web platform and pro
 *Course: Front End Web Development (26CA205PCB) — Academic Session 2026–27*  
 *Faculty Mentor: Dr. Shashank Bhardwaj*
 
-See the complete [PROJECT_REPORT.md](PROJECT_REPORT.md) for full project documentation and synopsis.
+---
+
+## 📄 Project Documentation & Presentations
+- 📘 **Full Project Report (.docx):** [docs/VISTARA_Project_Report.docx](docs/VISTARA_Project_Report.docx)
+- 📝 **Synopsis Report (.docx):** [docs/VISTARA_Synopsis_Report.docx](docs/VISTARA_Synopsis_Report.docx)
+- 📊 **Presentation Slides (.pptx):** [docs/VISTARA_Presentation.pptx](docs/VISTARA_Presentation.pptx)
+- 🌐 **Online Markdown Report:** [PROJECT_REPORT.md](PROJECT_REPORT.md)
 
 ---
 
