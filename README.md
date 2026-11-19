@@ -4,6 +4,19 @@ A complete, modern frontend football stadium ticket booking web platform and pro
 
 ---
 
+## 👥 Project Team
+- **Ruchir M Kaushal (Team Leader)** — Roll: `2628MCA0131` (`2628mca0131@kiet.edu`)
+- **Sarvagya Bhardwaj** — Roll: `2628MCA0297` (`2628mca0297@kiet.edu`)
+- **Sarthak Giri** — Roll: `2628MCA0251` (`2628mca0251@kiet.edu`)
+
+**Department of Computer Applications, KIET Deemed to be University, Delhi-NCR, Ghaziabad**  
+*Course: Front End Web Development (26CA205PCB) — Academic Session 2026–27*  
+*Faculty Mentor: Dr. Shashank Bhardwaj*
+
+See the complete [PROJECT_REPORT.md](PROJECT_REPORT.md) for full project documentation and synopsis.
+
+---
+
 ## 🏟 Experiences Included
 
 1. **Interactive 3D Stadium Experience (`view3d.html`):**
